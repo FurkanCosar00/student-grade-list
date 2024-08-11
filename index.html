@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/ortalama.js" defer></script>
+</head>
+<body>
+    <form class="form-group">
+        <label>Öğrenci Adı Soyadı</label>
+        <input required name="adSoyad" id="adSoyad" type="text">
+        <br>
+
+        <label>Öğrenci Bölümü</label>
+        
+        <select name="bolum" id="bolum">
+            <option>Lütfen Seçiniz</option>
+            <option value="Yazılım Mühendisliği">Yazılım Mühendisliği</option>
+            <option value="Bilgisayar Programcılığı">Bilgisayar Programcılığı</option>
+            <option value="Web Tasarım Ve Kodlama">Web Tasarım Ve Kodlama</option>
+            <option value="Grafik Tasarım">Grafik Tasarım</option>
+        </select>
+        <br>
+
+        <label>1. Vize Notu</label>
+        <input required name="vize1" id="vize1" type="number">
+        <br>
+
+        <label>2. Vize Notu</label>
+        <input required name="vize2" id="vize2" type="number">
+        <br>
+
+        <label>Final Sınavı Notu</label>
+        <input required name="finalSinavi" id="finalSinavi" type="number">
+        <br>
+
+        <button class="ogrenciEkle">Öğrenci Ekle</button>
+        <button class="listeyiSil">Listeyi Sil</button>
+    </form>
+
+    <div class="sonuc">
+        <div class="yazilim-muhendisligi">
+            <h2>Yazılım Mühendisliği Öğrencileri</h2>
+            <ul class="yazilimSonuc">
+                
+            </ul>
+        </div>
+
+        <div class="bilgisayar-programciligi">
+            <h2>Bilgisayar Programcılığı Öğrencileri</h2>
+            <ul class="bilgisayarSonuc">
+
+            </ul>
+        </div>
+
+        <div class="web-tasarim">
+            <h2>Web Tasarım Ve Kodlama Öğrencileri</h2>
+            <ul class="webSonuc">
+
+            </ul>
+        </div>
+
+        <div class="grafik-tasarim">
+            <h2>Grafik Tasarım Öğrencileri</h2>
+            <ul class="grafikSonuc">
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
